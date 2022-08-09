@@ -10,13 +10,14 @@ $small: 576px;
     background-color: white;
     border-radius: 1rem;
     position: absolute;
-    top: 30%;
+    top: 20%;
     padding: 2rem;
     margin: 1rem;
 
     @media screen and (min-width: $small) {
-      width: 400px;
+      width: 350px;
       left: 5%;
+      top: 30%;
     }
   }
   .search-btn {
