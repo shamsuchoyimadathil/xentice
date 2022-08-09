@@ -11,6 +11,9 @@ import {
 import ProductGroup from "../../components/partials/product/ProductGroup";
 import { productDatas } from "../../assets/datas/home/productDatas";
 import Footer from "../../components/partials/navs/Footer";
+import SecondBanners from "../../components/partials/home/SecondBanners";
+import Header from "../../components/partials/navs/Header";
+import SecondHeader from "../../components/partials/navs/SecondHeader";
 
 function HomePage() {
   return (
@@ -19,7 +22,11 @@ function HomePage() {
         drawerDatas={drawerDatas}
         drawerDividerDatas1={drawerDividerDatas1}
       />
+      <Box sx={{position:'absolute',top:"100px",width:"100%"}}>
+      <Header/>
       <FormBanner />
+      <SecondHeader/>
+      <SecondBanners/>
       {productDatas.map((item, index) => (
         <ProductGroup
           key={index}
@@ -30,6 +37,7 @@ function HomePage() {
       ))}
 
       <Footer/>
+      </Box>
     </Box>
   );
 }

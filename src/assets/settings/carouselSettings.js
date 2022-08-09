@@ -4,10 +4,10 @@ import PrevArrow from "../../components/modules/arrows/PrevArrow";
 export const settings = {
   infinite: true,
   speed: 500,
-  
+
   autoplay: false,
-  nextArrow:<NextArrow/>,
-  prevArrow:<PrevArrow/>,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
 
   responsive: [
     {
@@ -27,7 +27,7 @@ export const settings = {
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
@@ -42,6 +42,13 @@ export const settings = {
       breakpoint: 576,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },

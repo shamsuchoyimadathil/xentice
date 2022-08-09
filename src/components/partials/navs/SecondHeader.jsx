@@ -1,18 +1,18 @@
 import { Box, Container } from "@mui/system";
 import React from "react";
-import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
+import store from "../../../assets/images/home/store.png";
 
-function Header() {
+
+function SecondHeader() {
   return (
     <div
       style={{
-        backgroundColor: "#012b72",
-        color: "white",
+        backgroundColor: "white",
+        color: "black",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        padding:"0.2rem 5%"
+        padding:"0.2rem 1rem"
       }}
     >
 
@@ -24,7 +24,7 @@ function Header() {
         }}
       >
         <div style={{ margin: "auto auto" }}>
-          <FmdGoodOutlinedIcon />
+          <img src={store} alt="" height="25px" width="25px" />
         </div>
         <div>
           <p>Commercial shop</p>
@@ -38,7 +38,8 @@ function Header() {
         }}
       >
         <div style={{ margin: "auto auto" }}>
-          <FmdGoodOutlinedIcon />
+        <img src={store} alt="" height="25px" width="25px" />
+
         </div>
         <div>
           <p>Commercial shop</p>
@@ -52,7 +53,8 @@ function Header() {
         }}
       >
         <div style={{ margin: "auto auto" }}>
-          <FmdGoodOutlinedIcon />
+        <img src={store} alt="" height="25px" width="25px" />
+
         </div>
         <div>
           <p>Commercial shop</p>
@@ -62,4 +64,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default SecondHeader;

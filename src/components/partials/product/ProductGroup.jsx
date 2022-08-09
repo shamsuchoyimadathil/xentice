@@ -10,7 +10,8 @@ import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 
 function ProductGroup({ key, title, icon, products }) {
   return (
-    <Container key={key}>
+    <Container key={ title}>
+   
       <Box
         sx={{
           display: "flex",
@@ -35,6 +36,7 @@ function ProductGroup({ key, title, icon, products }) {
       <Slider {...settings}>
         {products.map((item, index) => (
           <Product
+            key={index}
             name={item.name}
             place={item.place}
             price={item.price}

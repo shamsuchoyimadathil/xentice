@@ -6,9 +6,9 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import { AddBoxRounded } from "@mui/icons-material";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
-function Product({name,place,price,image}) {
+function Product({name,place,price,image,key}) {
   return (
-    <Box className="product-card">
+    <Box className="product-card" key={key}>
       <img
         src={image}
         alt=""
@@ -21,8 +21,8 @@ function Product({name,place,price,image}) {
       <Box className="details">
         <Box className="title-icon-wrap" sx={{ marginTop: "0.5rem" }}>
           <p className="title">{name}</p>
-          <p>
-            <FavoriteBorderOutlinedIcon />
+          <p onClick={()=>alert("please login")} style={{cursor:"pointer"}}>
+            <FavoriteBorderOutlinedIcon  />
           </p>
         </Box>
         <Box
